@@ -1,22 +1,10 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel=stylesheet href=https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.css><link rel=stylesheet type=text/css href=static/reset.css media=all><title>reader</title><link href=./static/css/app.7e01838b937ecf6a8ced0e0f8a1a76d6.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.3ad1d5771e9b13dbdad2.js></script><script type=text/javascript src=./static/js/vendor.3091acb2b986ed5f2b56.js></script><script type=text/javascript src=./static/js/app.c89adf2c8f604e8552e5.js></script></body><script>mui.init({
-      keyEventBind: {
-        backbutton: true  //关闭back按键监听
-      }
-    });
-    // //首页返回键处理
-    // //处理逻辑：1秒内，连续两次按返回键，则退出应用；
-    var first = null;
-    mui.back = function() {
-      //首次按键，提示  再按一次退出应用
-      if (!first) {
-        first = new Date().getTime();//记录第一次按下回退键的时间
-        mui.toast('再按一次退出应用');//给出提示
-        history.go(-1)//回退到上一页面
-        setTimeout(function() {//1s中后清除
-          first = null;
-        }, 1000);
-      } else {
-        if (new Date().getTime() - first < 1000) {//如果两次按下的时间小于1s，
-          plus.runtime.quit();//那么就退出app
-
-        } } };</script></html>
+<!DOCTYPE html><html><head><meta charset=utf-8><title>加时代</title><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"><link rel="shorcut icon" type=image/x-icon href=http://osk1hpe2y.bkt.clouddn.com/17-11-30/54926117.jpg><link rel=stylesheet href=http://at.alicdn.com/t/font_270781_dg1twm48qov6xbt9.css><script language=javascript src="http://webapi.amap.com/maps?v=1.4.1&key=487dca3cf6f3f4c92a8f4d37314e71a8&plugin=AMap.ControlBar"></script><link href=./static/css/app.fff324905ef49c227fb623d716d66e2f.css rel=stylesheet></head><body><div id=app></div><script>var _mtac = {"senseQuery":1};
+  	(function() {
+  		var mta = document.createElement("script");
+  		mta.src = "http://pingjs.qq.com/h5/stats.js?v2.0.4";
+  		mta.setAttribute("name", "MTAH5");
+  		mta.setAttribute("sid", "500558827");
+  		mta.setAttribute("cid", "500559491");
+  		var s = document.getElementsByTagName("script")[0];
+  		s.parentNode.insertBefore(mta, s);
+  	})();</script><script type=text/javascript src=./static/js/manifest.9c907dfc4a3466a72a91.js></script><script type=text/javascript src=./static/js/vendor.76cd105660419b6e74d4.js></script><script type=text/javascript src=./static/js/app.f17d19ee34b325d9512b.js></script></body></html>
